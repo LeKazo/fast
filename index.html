@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>clicker</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <body>
+    <div class = click>
+    <h1 id = "title">The Fastest Clicker in the Weast</h1>
+    <button type="button" id = "clicker">Showdown Time : 0 </button>
+    <br>
+      <button type="button" id = "reset" onClick="window.location.reload();">Reset</button>
+      <h2>Time to Get Slingin!</h2>
+  </div> 
+  
+      </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <link rel="stylesheet" href="style.css">
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+   </head>
+   <body >
+   <center>
+   <div id="wrapper">
+     <div id="myTimer"></div>
+   </div>
+   
+   <p id="note">Yeehaw</p>
+   </center>  
+   <!-- <button  >start</button> -->
+   <input id="start" type="button" value="" onclick="countDown();"/>
+   <script id="btntimer">
+       var sec = 15;
+       var myTimer = document.getElementById('myTimer');
+       var myBtn = document.getElementById('myBtn');
+   
+       function countDown()
+       {
+           if (sec < 10) {
+               myTimer.innerHTML = "0" + sec;
+           } else {
+               myTimer.innerHTML = sec;
+           }
+           if (sec <= 0) {
+               $("#myBtn").removeAttr("disabled");
+               $("#myBtn").removeClass().addClass("btnEnable");
+               $("#myTimer").fadeTo(2500, 0);
+               myBtn.innerHTML = "Click Me!";
+               return;
+           }
+           sec -= 1;
+           window.setTimeout(countDown, 1000);
+       }
+    
+
+   </script>
+   </body>
+   </html>
+   
+  
+</body>
+</html>

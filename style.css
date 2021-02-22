@@ -1,0 +1,90 @@
+h1{
+  text-align: center;
+  color: black;
+}
+h2{
+  color:black
+}
+#clicker{
+  color:black;
+  height: 150px;
+  width: 150px;
+  background-image: url(wud.png);
+}
+#reset {
+  width: 150px;
+  height: 40px;
+  background-image: url(wud.png);
+}
+#start{
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  background-image: url(wud.png);
+}
+
+.click{
+  text-align: center
+}
+body{
+  background: rgb(122, 89, 109);
+}
+
+    body
+    {
+      background-image: url("yeehaw.png");
+      background-size: cover;
+      text-align: center;
+    }
+   #wrapper {
+     text-align:center;
+     border:5px solid white;
+     border-radius: 10px;
+     width:150px;
+     margin:25px auto;
+     padding:25px;
+    background-image: url("yeehat.jpg");
+    background-size: cover;
+   }
+   #myTimer {
+     font:64px Tahoma bold;
+     padding:20px;
+     display:block;
+   }
+   button {
+     width:125px;
+     padding:10px;
+   }
+   .btnEnable {
+     background-color:#616247FF;
+     border:3px solid white;
+     border-radius: 8px;
+     color:white;
+     cursor:pointer;
+   }
+   .btnDisable {
+     background-color:#616247FF;
+     border:3px solid white;
+     color:white;
+     cursor:wait;
+     border-radius: 8px;
+   }
+   #note
+   {
+       color: black;
+   }
+
+   #title{
+     animation: textgrowth 1s infinite alternate;
+     -webkit-text-stroke: .3px white;
+     font-family: western;
+   }
+
+   @keyframes textgrowth {
+  0% {
+    font-size: 40px;
+  }
+  100% {
+    font-size:  50px;
+  }
+   }
